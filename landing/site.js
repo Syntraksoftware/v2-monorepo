@@ -119,6 +119,51 @@
     window.addEventListener('scroll', heroParallax, { passive: true });
   }
 
+  /* ---------- thermal reveal (hover mask on desktop, scroll on touch) ---------- */
+  (function () {
+    var section = document.getElementById("performance");
+    var wrap = document.getElementById("th-img-wrap");
+    var top = document.getElementById("th-top");
+    var cur = document.getElementById("th-cursor");
+    if (!section || !wrap || !top) return;
+
+    var touchMq = window.matchMedia("(max-width: 768px)");
+
+    /* Touch/mobile: fade the plain layer out when the image scrolls into view */
+    if ("IntersectionObserver" in window) {
+      var thObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && touchMq.matches) {
+            section.classList.add("th-revealed");
+            thObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.45 });
+      thObs.observe(wrap);
+    } else {
+      section.classList.add("th-revealed");
+    }
+
+    /* Desktop: cursor-following mask */
+    var R = 200;
+    function setMask(x, y) {
+      var s1 = Math.round(R * .55), s2 = Math.round(R * .72), s3 = Math.round(R * .92);
+      var m = "radial-gradient(circle " + R + "px at " + x + "px " + y + "px, transparent 0%, transparent " + s1 + "px, rgba(0,0,0,.55) " + s2 + "px, black " + s3 + "px)";
+      top.style.webkitMaskImage = m; top.style.maskImage = m;
+      if (cur) { cur.style.left = x + "px"; cur.style.top = y + "px"; }
+    }
+    wrap.addEventListener("mousemove", function (e) {
+      if (touchMq.matches) return;
+      var b = wrap.getBoundingClientRect();
+      setMask(e.clientX - b.left, e.clientY - b.top);
+      if (cur) { cur.style.transform = "translate(-50%,-50%) scale(1)"; cur.style.opacity = "1"; }
+    });
+    wrap.addEventListener("mouseleave", function () {
+      setMask(-9999, -9999);
+      if (cur) { cur.style.transform = "translate(-50%,-50%) scale(0)"; cur.style.opacity = "0"; }
+    });
+  })();
+
   /* ---------- sticky edge-angle scroll sequence ---------- */
   var seq = document.getElementById("data-seq");
   if (seq) {
@@ -180,23 +225,42 @@
       roNum.textContent = Math.round(peak * prog);
     }
 
-    var isMobileSeq = window.innerWidth < 768;
+    var seqMq = window.matchMedia("(max-width: 767px)");
 
-    if (reduce || isMobileSeq) {
-      // static end-state on mobile/reduced-motion: all items visible, line fully drawn
+    // static end-state on mobile/reduced-motion: all items visible, line fully drawn
+    function seqStatic() {
       pathYou.style.strokeDashoffset = 0;
       pathTarget.style.opacity = 1;
       legendTarget.style.opacity = 1;
-      seqItems.forEach(function(item) { item.classList.add('done'); });
-      seqItems[seqItems.length - 1].classList.remove('done');
-      seqItems[seqItems.length - 1].classList.add('active');
+      seqItems.forEach(function (item, i) {
+        item.classList.toggle("done", i < seqItems.length - 1);
+        item.classList.toggle("active", i === seqItems.length - 1);
+      });
+      var end = pathYou.getPointAtLength(youLen);
+      marker.setAttribute("cx", end.x);
+      marker.setAttribute("cy", end.y);
       if (roNum) roNum.textContent = 48;
+      if (roDtext) roDtext.textContent = DIRECTIVES[2];
+      lastPhase = 2;
+    }
+
+    if (reduce) {
+      seqStatic();
     } else {
       var ticking = false;
       window.addEventListener("scroll", function () {
+        // mobile CSS unpins the track, so the desktop progress math is invalid there
+        if (seqMq.matches) return;
         if (!ticking) { requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
       }, { passive: true });
-      onScroll();
+
+      function applySeqMode() {
+        if (seqMq.matches) { seqStatic(); }
+        else { lastPhase = -1; onScroll(); }
+      }
+      if (seqMq.addEventListener) seqMq.addEventListener("change", applySeqMode);
+      else if (seqMq.addListener) seqMq.addListener(applySeqMode); // older Safari
+      applySeqMode();
     }
   }
 
