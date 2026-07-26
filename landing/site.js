@@ -181,9 +181,9 @@
     pathYou.style.strokeDashoffset = youLen;
 
     var DIRECTIVES = [
-      "Hold the edge longer through the fall line.",
-      "You're carving 6° under target on the steeps.",
-      "Shift your weight forward — initiate the edge earlier."
+      "“Hold the edge longer through the fall line.”",
+      "“You're carving 6° under target on the steep.”",
+      "“Shift your weight forward to initiate the edge earlier.”"
     ];
     var PEAK = [42, 42, 48]; // readout peak per phase
 
