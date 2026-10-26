@@ -420,6 +420,16 @@ img { display: block; max-width: 100%; }
   .compare-cell { padding: 14px 12px; font-size: .85rem; }
 }
 
+/* ---------- recognition (awards, press, partners) ---------- */
+.rec-grid-awards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 48px; margin-bottom: 48px; }
+.rec-award h3 { font-family: var(--font-body); font-weight: 600; font-size: 1rem; margin: 0 0 4px; color: var(--bright-white); }
+.rec-award p { margin: 0; font-size: .88rem; color: rgba(193,215,235,.6); line-height: 1.45; }
+.rec-award .yr { font-family: var(--font-mono); font-size: 10.5px; color: rgba(193,215,235,.4); letter-spacing: .08em; display: block; margin-top: 5px; }
+.rec-press-grid { border-top: 1px solid rgba(193,215,235,.12); padding-top: 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px 18px; align-items: center; }
+.rec-press-grid .lg { font-family: var(--font-body); font-weight: 600; font-size: 13px; color: var(--bright-white); white-space: nowrap; opacity: .4; text-align: center; transition: opacity .25s ease; }
+.rec-press-grid .lg:hover { opacity: .9; }
+.rec-press-grid .lg img { display: block; height: 22px; width: auto; margin: 0 auto; filter: grayscale(1) brightness(0) invert(1); }
+
 /* ---------- pricing grid ---------- */
 .pricing-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
@@ -651,6 +661,10 @@ body.hide-eyebrows .head-eyebrow { display: none; }
   }
   .compare-cell { padding: 12px 8px; font-size: .8rem; }
   .compare-head .compare-cell { font-size: 9px; }
+
+  /* --- Recognition --- */
+  .rec-grid-awards { grid-template-columns: 1fr; gap: 24px; }
+  .rec-press-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* --- Pricing --- */
   .pricing-grid { grid-template-columns: 1fr; max-width: 100%; }
