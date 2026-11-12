@@ -3,15 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syntrak — See Every Movement. Master Every Run.</title>
-<meta name="description" content="Syntrak turns your ski base layer into a precision motion-capture and AI coaching system. See every movement. Master every run.">
+<title>Syntrak | Smart Ski Thermal with AI Coaching and 3D Replay</title>
+<meta name="description" content="Syntrak is a Hong Kong startup building a smart ski thermal with AI coaching and 3D movement replay for skiers and coaches. See every movement. Master every run.">
+<link rel="canonical" href="https://syntrak.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://syntrak.io/">
+<meta property="og:title" content="Syntrak | Smart Ski Thermal with AI Coaching and 3D Replay">
+<meta property="og:description" content="Syntrak is a Hong Kong startup building a smart ski thermal with AI coaching and 3D movement replay for skiers and coaches. See every movement. Master every run.">
+<meta property="og:image" content="https://syntrak.io/assets/og-image.jpg">
+<meta property="og:site_name" content="Syntrak">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F6F7">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 <link rel="stylesheet" href="colors_and_type.css">
 <link rel="stylesheet" href="landing/site.css">
-<link rel="preload" as="image" href="assets/product/thermal-plain2.png" fetchpriority="high">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://syntrak.io/#org",
+      "name": "Syntrak",
+      "legalName": "Syntrak Limited",
+      "url": "https://syntrak.io/",
+      "logo": "https://syntrak.io/assets/logo/syntrak-stacked.png",
+      "description": "Hong Kong startup building a smart ski thermal with AI coaching and 3D movement replay for skiers and coaches.",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hong Kong",
+        "addressCountry": "HK"
+      },
+      "email": "general@syntrak.io",
+      "founder": {
+        "@id": "https://syntrak.io/#matthew"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/syntrak/",
+        "https://www.facebook.com/profile.php?id=61596526132702"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://syntrak.io/#matthew",
+      "name": "Matthew Sze Chun Lee",
+      "alternateName": [
+        "Matthew Lee",
+        "Lee Sze Chun Matthew",
+        "李思晉"
+      ],
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@id": "https://syntrak.io/#org"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/matthewlsc/",
+        "https://www.facebook.com/lscmatt1",
+        "https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=252725"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://syntrak.io/#website",
+      "url": "https://syntrak.io/",
+      "name": "Syntrak",
+      "publisher": {
+        "@id": "https://syntrak.io/#org"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="hide-eyebrows">
 
@@ -22,270 +88,227 @@
     <img class="logo logo-dark" src="assets/logo/syntrak-horizontal.png" alt="Syntrak">
   </a>
   <div class="links">
-    <a href="#performance" style="font-family: 'Inter Tight'">PERFORMANCE</a>
-    <a href="#data-seq" style="font-family: 'Inter Tight'">COACHING</a>
-    <a href="#contact" style="font-family: 'Inter Tight'">CONTACT</a>
-    <a href="#contact" class="btn navcta" style="border-radius: 30px">Pre-order</a>
+    <a href="#how-it-works" style="font-family: 'Inter Tight'">HOW IT WORKS</a>
+    <a href="#compare" style="font-family: 'Inter Tight'">COMPARE</a>
+    <a href="#team" style="font-family: 'Inter Tight'">TEAM</a>
+    <a href="faq/" style="font-family: 'Inter Tight'">FAQ</a>
+    <a href="#contact" class="btn navcta" style="border-radius: 30px">Join waitlist</a>
   </div>
 </nav>
 
 <!-- ===================== HERO ===================== -->
 <header id="hero" data-nav="dark" data-screen-label="Hero">
   <div class="hero-video-wrap">
-    <video id="hero-video" autoplay muted loop playsinline preload="auto">
-      <source src="assets/Syntrak Hero.mov" type="video/mp4">
+    <video id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+      <source src="assets/hero.mp4" type="video/mp4">
     </video>
     <div class="hero-vignette"></div>
   </div>
   <div class="hero-sticky">
     <div class="hero-text">
       <p class="hero-name head-eyebrow">Syntrak Base Layer · Gen 1</p>
-      <h1 class="hero-title" style="font-size: clamp(2.4rem, 6.4vw, 4rem); padding: 16px 0px 4px; letter-spacing: clamp(-1px, -0.03em, -2px); line-height: 0.95; font-weight: 500; font-family: 'Inter Tight'">See Every Movement.<br><span style="color: #ffffff00">Master Every Run.</span></h1>
-      <p class="hero-sub" style="margin: 6px 0px 0px">AI-powered coaching, embedded in your thermal.*</p>
+      <h1 class="hero-title" style="font-size: clamp(2.4rem, 6.4vw, 4rem); padding: 16px 0px 4px; letter-spacing: clamp(-1px, -0.03em, -2px); line-height: 0.95; font-weight: 500; font-family: 'Inter Tight'">See Every Movement.<br><span>Master Every Run.</span></h1>
+      <p class="hero-sub" style="margin: 6px 0px 0px">AI-powered coaching, embedded in your thermal.</p>
     </div>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary" style="border-radius: 30px; gap: 10px">GET STARTED →</a>
+      <a href="#contact" class="btn btn-primary" style="border-radius: 30px; gap: 10px">JOIN THE WAITLIST →</a>
     </div>
   </div>
 </header>
 
-<!-- ===================== THERMAL REVEAL ===================== -->
-<section id="performance" class="thermal-hero" data-nav="dark" data-screen-label="Thermal reveal" style="background-color: rgb(5, 6, 15); padding: 122px 0px 8px">
-  <div class="th-wrap">
-    <div class="th-left">
-      <h2 class="th-headline" style="font-weight: 500">Intelligence<br>woven in.</h2>
-      <p class="th-sub">From real-time cues to post-run analysis, all built into one smart thermal, with the power of AI.</p>
-      <ul class="th-features">
-        <li>
-          <span class="th-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4m8.4 0a6 6 0 0 1 0 8.4m2.9 2.9a10 10 0 0 0 0-14.2"/></svg></span>
-          <div><strong>Smart performance wearables</strong><p>Embedded within the garment for comprehensive performance insights.</p></div>
-        </li>
-        <li>
-          <span class="th-icon"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></span>
-          <div><strong>Comfort without compromise</strong><p>Premium thermal-grade fabric designed for all-day, high-output wear.</p></div>
-        </li>
-        <li>
-          <span class="th-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
-          <div><strong>Built to last the day</strong><p>Track your runs without stopping.</p></div>
-        </li>
-      </ul>
+<!-- ===================== RECOGNITION BAR ===================== -->
+<!-- TODO(press links): each outlet logo in the "In the press" row becomes a link once its article URL is set in landing/site.js (PRESS, href). -->
+<section id="recognition-bar" aria-label="Awards, programmes and press">
+  <p class="rb-label">Recognised by</p>
+  <div class="rb-viewport">
+    <div class="ticker-track rb-track">
+      <ul class="rb-list" id="rb-list"></ul>
     </div>
-    <div class="th-right">
-      <div class="th-img-wrap" id="th-img-wrap">
-        <img class="th-base" src="assets/product/thermal-tech2.png" alt="Syntrak thermal with sensor nodes" draggable="false">
-        <img class="th-top" id="th-top" src="assets/product/thermal-plain2.png" alt="" draggable="false" fetchpriority="high">
-        <div class="th-cursor" id="th-cursor"></div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section id="how-it-works" aria-labelledby="hiw-heading">
+  <div class="hiw-intro-band"><div class="hiw-intro wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="headline" id="hiw-heading">Put it on. Ski. See every movement.</h2>
+  </div></div>
+  <div class="hiw-stack" id="hiw-stack">
+    <div class="hiw-wrap">
+      <article class="hiw-card hiw-card--1" aria-labelledby="hiw-t1">
+        <div class="hiw-shade" aria-hidden="true"></div>
+        <div class="hiw-inner t1">
+          <div class="t1-text">
+            <p class="t1-label">Step 1 of 3</p>
+            <h3 class="t1-title" id="hiw-t1">Sensors woven into your ski thermal</h3>
+            <p class="t1-lead">Wear it as your base layer, under your usual ski gear. Hold a quick calibration pose and all sensors are ready.</p>
+            <div class="seg" role="group" aria-label="Thermal view">
+              <button type="button" class="seg-btn" data-view="fabric" aria-pressed="true">Fabric</button>
+              <button type="button" class="seg-btn" data-view="sensors" aria-pressed="false">Sensors</button>
+            </div>
+          </div>
+          <div class="t1-frame th-img-wrap" id="th-img-wrap" data-view="fabric">
+            <div class="th-zoom">
+              <div class="th-layer"><img class="th-img" src="assets/product/thermal-tech2-crop.webp" alt="Syntrak smart thermal base layer, inside view" draggable="false" width="893" height="1055"></div>
+              <div class="th-layer" id="th-top"><img class="th-img" src="assets/product/thermal-plain2-crop.webp" alt="Syntrak smart thermal base layer, fabric view" draggable="false" width="893" height="1055"></div>
+            </div>
+            <div class="th-cursor" id="th-cursor"></div>
+          </div>
+          <ul class="t1-facts">
+            <li><h4>Embeds sensors in the fabric</h4><p>The garment itself carries the sensors, for comprehensive performance insights.</p></li>
+            <li><h4>Stays comfortable all day</h4><p>Premium thermal-grade fabric designed for all-day, high-output wear.</p></li>
+            <li><h4>Keeps up with every run</h4><p>Track your runs without stopping.</p></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="hiw-wrap">
+      <article class="hiw-card hiw-card--2 hiw-card--video" aria-labelledby="hiw-t2">
+        <div class="hiw-bg" aria-hidden="true">
+          <video class="hiw-video" muted loop playsinline preload="metadata" poster="assets/how-it-works/step-2-ski-poster.jpg" data-placeholder="assets/how-it-works/step-2-ski.mp4"><source src="assets/how-it-works/step-2-ski.mp4" type="video/mp4"></video>
+        </div>
+        <div class="hiw-scrim" aria-hidden="true"></div>
+        <div class="hiw-shade" aria-hidden="true"></div>
+        <div class="hiw-inner">
+          <header class="hiw-head"><span class="hiw-num">02</span><h3 class="hiw-title" id="hiw-t2">Ski as you normally do</h3></header>
+          <p class="hiw-body">No camera, no one filming you. The sensors record how your whole body moves, turn by turn, on every run.</p>
+        </div>
+      </article>
+    </div>
+    <div class="hiw-wrap hiw-wrap--gallery" id="hiw-gallery-wrap">
+      <div class="hiw-stage">
+        <article class="hiw-card hiw-card--3" aria-labelledby="hiw-t3" id="hiw-card-3">
+          <div class="hiw-inner">
+            <header class="hiw-head"><span class="hiw-num">03</span><h3 class="hiw-title" id="hiw-t3">Review on your Mac</h3></header>
+            <p class="hiw-body">Back inside, open any run in the Syntrak desktop app and see exactly what your body did.</p>
+            <div class="hiw-media hiw-media--window" aria-hidden="true"></div>
+          </div>
+          <div class="gal" id="gal" aria-roledescription="carousel" aria-label="Syntrak desktop app screenshots">
+            <div class="gal-meta" aria-hidden="true"><span class="gal-count" id="gal-count">01 / 04</span><span class="gal-bar"><span class="gal-bar-fill" id="gal-bar-fill"></span></span></div>
+            <div class="gal-viewport" id="gal-viewport" tabindex="-1" aria-label="Screenshots, use left and right arrow keys">
+              <ol class="gal-strip" id="gal-strip"></ol>
+            </div>
+            <div class="gal-controls">
+              <button type="button" class="gal-btn" id="gal-prev" aria-label="Previous screenshot">‹</button>
+              <div class="gal-dots" id="gal-dots"></div>
+              <button type="button" class="gal-btn" id="gal-next" aria-label="Next screenshot">›</button>
+            </div>
+            <p class="gal-caption">Syntrak for macOS</p>
+          </div>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== DATA SEQUENCE (sticky, dark) ===================== -->
-<section id="data-seq" class="theme-dark" data-nav="dark" data-screen-label="Data sequence">
-  <div class="track">
-    <div class="pin" style="background-color: rgb(5, 6, 15)">
-      <div class="pin-inner">
-        <!-- left: Whoop-style numbered scroll list -->
-        <div class="seq-copy">
-          <h2 class="headline seq-title" style="font-weight: 500; letter-spacing: -0.03em; font-size: clamp(1.8rem, 4.5vw, 3.5rem)">Real-time coaching on every run.</h2>
-          <div class="seq-list">
-            <div class="seq-item active" data-step="0">
-              <div class="seq-row">
-                <span class="seq-num">01</span>
-                <h3 class="seq-heading">Every turn, measured.</h3>
-              </div>
-              <p class="seq-body">Syntrak captures joint trajectory, edge angle on
-each carve</p>
-            </div>
-            <div class="seq-item" data-step="1">
-              <div class="seq-row">
-                <span class="seq-num">02</span>
-                <h3 class="seq-heading">Against your target.</h3>
-              </div>
-              <p class="seq-body">Your line is mapped against your selected target for the run. The gap shows how you can reach the next level.</p>
-            </div>
-            <div class="seq-item" data-step="2">
-              <div class="seq-row">
-                <span class="seq-num">03</span>
-                <h3 class="seq-heading">Your data, turned into one instruction.</h3>
-              </div>
-              <p class="seq-body">No raw numbers. Live AI coaching gives one clear move, for each turn.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- right: viz card -->
-        <div class="seq-phone" style="line-height: 1.4; padding: 42px 0px 0px">
-          <div class="viz seq-viz">
-            <div class="viz-head">
-              <div class="viz-readout ro-big"><span id="ro-num">0</span><span class="ro-unit">°</span></div>
-              <div class="eyebrow" style="margin-left: 10px; color: var(--powder-blue); align-self: flex-end; padding-bottom: 4px; margin: 0px 0px 22px -4px">EDGE ANGLE</div>
-            </div>
-            <svg viewBox="0 0 480 170" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g stroke="rgba(193,215,235,.10)" stroke-width="1">
-                <line x1="0" y1="42" x2="480" y2="42"></line>
-                <line x1="0" y1="85" x2="480" y2="85"></line>
-                <line x1="0" y1="128" x2="480" y2="128"></line>
-              </g>
-              <path id="path-target" d="M0,112 C60,112 82,86 120,86 C158,86 180,112 240,112 C300,112 322,84 360,84 C398,84 420,112 480,112"
-                    fill="none" stroke="var(--kinetic-gold)" stroke-width="2.5" stroke-dasharray="5 6" opacity="0"></path>
-              <path id="path-you" d="M0,120 C60,120 82,60 120,60 C158,60 180,124 240,124 C300,124 322,44 360,44 C398,44 420,112 480,112"
-                    fill="none" stroke="var(--slate-blue)" stroke-width="3"></path>
-              <circle id="marker" r="5" fill="var(--bright-white)" cx="0" cy="120"></circle>
-            </svg>
-            <div class="legend">
-              <span><span class="key" style="background:var(--slate-blue)"></span>Your edge</span>
-              <span id="legend-target" style="opacity:0"><span class="key" style="background:var(--kinetic-gold)"></span>Average</span>
-            </div>
-            <div class="viz-directive">
-              <p class="coach-label">Coach</p>
-              <p class="coach-text" id="ro-dtext">Hold the edge longer through the fall line.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+  <button type="button" class="lb-close" id="lb-close" aria-label="Close">×</button>
+  <div class="lb-media" id="lb-media"></div>
+  <p class="lb-title" id="lb-title"></p>
+  <p class="lb-body" id="lb-body"></p>
+</dialog>
 
 <!-- ===================== COMPARISON TABLE ===================== -->
-<section class="section theme-dark" data-nav="dark" data-screen-label="Comparison" style="padding: 169px 0px 9px">
+<section id="compare" class="section theme-light cmp-section" aria-labelledby="cmp-heading">
   <div class="wrap">
-    <p class="eyebrow head-eyebrow" style="text-align:center;color:var(--powder-blue);margin-bottom:14px">How we compare</p>
-    <h2 class="headline reveal" style="text-align: left; margin-bottom: 56px; font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 500">Why Syntrak?</h2>
-    <div class="compare-table reveal d1">
-      <div class="compare-head">
-        <div class="compare-cell compare-feat" style="color: rgba(255, 255, 255, 0.45); font-family: 'Inter Tight'">Feature</div>
-        <div class="compare-cell compare-us">Syntrak</div>
-        <div class="compare-cell">Competitors</div>
-        <div class="compare-cell" style="font-family: 'Inter Tight'">Private Coach</div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Real-time coaching</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Coach-ready reports</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-        <div class="compare-cell" data-icon="x"></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Run-by-run progress tracking</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-        <div class="compare-cell" data-icon="check"></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Full-body movement analysis</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-        <div class="compare-cell" data-icon="x"></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Smart wearable technology</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell compare-feat">Affordable at scale</div>
-        <div class="compare-cell compare-us" data-icon="check"></div>
-        <div class="compare-cell" data-icon="x"></div>
-        <div class="compare-cell" data-icon="x"></div>
-      </div>
+    <p class="eyebrow">How we compare</p>
+    <h2 class="headline" id="cmp-heading">Why Syntrak?</h2>
+    <p class="cmp-lead">Most tools see part of your skiing. Syntrak measures your whole body, on any slope, on every run.</p>
+    <div class="cmp-frame" id="cmp-frame">
+    <div class="cmp-scroll" id="cmp-scroll">
+      <table class="cmp-table">
+        <caption class="sr-only">Syntrak compared with four categories of ski analysis</caption>
+        <thead><tr><td class="cmp-corner"></td><th scope="col" class="cmp-us cmp-us-head"><span class="cmp-cat">Syntrak</span></th><th scope="col"><span class="cmp-cat">Foot sensors</span><span class="cmp-desc">Insoles or boot sensors</span></th><th scope="col"><span class="cmp-cat">Lab motion capture</span><span class="cmp-desc">Research-grade sensor suits</span></th><th scope="col"><span class="cmp-cat">Video analysis</span><span class="cmp-desc">Filmed, then reviewed in an app</span></th><th scope="col"><span class="cmp-cat">Private coach</span><span class="cmp-desc">On-slope lessons</span></th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Whole-body movement data</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">2D, one angle</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+          <tr><th scope="row">Ski without anyone filming or watching</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">technician setup</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+          <tr><th scope="row">Built for ski technique</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">manual review</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td></tr>
+          <tr><th scope="row">Every turn of every run measured</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">test sessions</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">filmed runs only</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">runs they see</span></td></tr>
+          <tr><th scope="row">3D replay of your movement</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td></tr>
+          <tr><th scope="row">Progress across a season</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="x" aria-hidden="true"></span><span class="sr-only">No</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly</span></td></tr>
+          <tr><th scope="row">Coach-ready review</th><td class="cmp-v cmp-us"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span><span class="sr-only">Partly: </span><span class="cmp-note">needs an analyst</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td><td class="cmp-v"><span class="cmp-ic" data-icon="check" aria-hidden="true"></span><span class="sr-only">Yes</span></td></tr>
+        </tbody>
+      </table>
     </div>
+    </div>
+    <ul class="cmp-legend" aria-label="Legend">
+      <li><span class="cmp-ic" data-icon="check" aria-hidden="true"></span>Yes</li>
+      <li><span class="cmp-ic" data-icon="partial" aria-hidden="true"></span>Partly</li>
+      <li><span class="cmp-ic" data-icon="x" aria-hidden="true"></span>No</li>
+    </ul>
+    <p class="cmp-foot">Compared by category, based on typical products in each category, November 2026.</p>
   </div>
 </section>
 
-<!-- ===================== RECOGNITION ===================== -->
-<section id="recognition" class="section theme-darker" data-nav="dark" data-screen-label="Recognition">
+<!-- ===================== TEAM ===================== -->
+<section id="team" class="section theme-light team-section" aria-labelledby="team-heading">
   <div class="wrap">
-    <p class="eyebrow head-eyebrow" style="text-align:center;color:var(--powder-blue);margin-bottom:14px">Recognition</p>
-    <h2 class="headline reveal" style="text-align:left;margin-bottom:56px;font-size:clamp(2rem, 4.5vw, 3.5rem);font-weight:500">Nine months.<br>Ten recognitions.</h2>
-
-    <!-- Awards & press -->
-    <div class="reveal" style="margin-bottom:80px">
-      <p class="eyebrow" style="margin-bottom:24px">Awards &amp; Programmes</p>
-      <div class="rec-grid-awards">
-        <div class="rec-award">
-          <h3>Gold Award, Tertiary Division</h3>
-          <p>Dare to Change, Young Entrepreneurs Development Council</p>
-          <span class="yr">Jul 2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Top 20 Startup</h3>
-          <p>Hong Kong Techathon+, 10th Edition, HKSTP</p>
-          <span class="yr">Jan 2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Cyberport Incubation Programme</h3>
-          <p>Hong Kong Cyberport Management Company</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Youngest Startup Admittee</h3>
-          <p>HKUST InnoBay Innovation Hub</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Co-Ideation Programme Admittee</h3>
-          <p>Hong Kong Science &amp; Technology Parks</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Startup of the Month</h3>
-          <p>Asian Science Park Association Webzine</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Gold Award</h3>
-          <p>HKUST USEL Competition</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Dream Builder Award</h3>
-          <p>HKUST Entrepreneurship Center, Startup Incubation Programme</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Top 12 Finalist</h3>
-          <p>HK University Student Innovation &amp; Entrepreneurship Competition, 12th Edition</p>
-          <span class="yr">2026</span>
-        </div>
-        <div class="rec-award">
-          <h3>Innovation, Creativity &amp; Entrepreneurship Award</h3>
-          <p>Hong Kong General Chamber of Commerce Scholarship</p>
-          <span class="yr">2026</span>
-        </div>
-      </div>
-      <p class="eyebrow" style="margin-bottom:22px">Press</p>
-      <div class="rec-press-grid">
-        <div class="lg"><img src="assets/press/wenweipo.svg" alt="文匯報 Wen Wei Po"></div>
-        <div class="lg"><img src="assets/press/hkej.svg" alt="信報 Hong Kong Economic Journal"></div>
-        <div class="lg"><img src="assets/press/singtao.svg" alt="星島頭條 Sing Tao Headline"></div>
-        <div class="lg"><img src="assets/press/bastillepost.svg" alt="巴士的報 Bastille Post"></div>
-        <div class="lg"><img src="assets/press/capital.svg" alt="資本雜誌 Capital"></div>
-        <div class="lg">EJ Tech</div>
-        <div class="lg">堅料網</div>
-        <div class="lg"><img src="assets/press/invest360.png" alt="INVEST360"></div>
-      </div>
+    <div class="reveal">
+      <p class="eyebrow">Team</p>
+      <h2 class="headline" id="team-heading">The founders</h2>
+      <p class="team-lead">Founded in Hong Kong by Matthew Sze Chun Lee, with co-founders Aidan Chan, Adrian Yung and Isaac Lee.</p>
     </div>
-
+    <!-- TODO(team links): only Matthew has social URLs so far. Add a <div class="team-socials"> with real links to the other three photos;
+         the hover icons are drawn only where that block exists (never a "#" link). -->
+    <ul class="team-grid">
+      <li class="team-member reveal d1">
+        <div class="team-photo">
+          <img src="assets/team/matthew-sze-chun-lee.webp" alt="Portrait of Matthew Sze Chun Lee, Founder &amp; CEO of Syntrak" width="720" height="900" loading="lazy" decoding="async">
+          <div class="team-socials">
+            <a href="https://www.linkedin.com/in/matthewlsc/" target="_blank" rel="noopener" aria-label="Matthew Sze Chun Lee on LinkedIn (opens in a new tab)"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.633 13.633h-2.37V9.92c0-.885-.017-2.025-1.234-2.025-1.235 0-1.424.965-1.424 1.96v3.778h-2.37V5.998H8.51v1.043h.031a2.5 2.5 0 0 1 2.246-1.233c2.403 0 2.846 1.58 2.846 3.637zM3.56 4.954a1.376 1.376 0 1 1 0-2.751 1.376 1.376 0 0 1 0 2.751m1.185 8.679H2.372V5.998h2.373zM14.815.001H1.18A1.17 1.17 0 0 0 0 1.154v13.691A1.17 1.17 0 0 0 1.18 16h13.635A1.17 1.17 0 0 0 16 14.845V1.153A1.17 1.17 0 0 0 14.815 0"/></svg></a>
+            <a href="https://www.facebook.com/lscmatt1" target="_blank" rel="noopener" aria-label="Matthew Sze Chun Lee on Facebook (opens in a new tab)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name"><a href="https://www.linkedin.com/in/matthewlsc/" target="_blank" rel="noopener" aria-label="Matthew Sze Chun Lee on LinkedIn (opens in a new tab)">Matthew Sze Chun Lee</a></h3>
+          <p class="team-role">Founder &amp; CEO</p>
+          <p class="team-note">Hong Kong&rsquo;s first SAHK-licensed ski coach</p>
+          <p class="team-note">Hong Kong&rsquo;s first cross-country skier</p>
+        </div>
+      </li>
+      <li class="team-member reveal d2">
+        <div class="team-photo">
+          <img src="assets/team/aidan-chan.webp" alt="Portrait of Aidan Chan, Co-Founder &amp; CFO of Syntrak" width="720" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Aidan Chan</h3>
+          <p class="team-role">Co-Founder &amp; CFO</p>
+          <p class="team-note">Ex-KPMG and Ex-BOC</p>
+        </div>
+      </li>
+      <li class="team-member reveal d3">
+        <div class="team-photo">
+          <img src="assets/team/adrian-yung.webp" alt="Portrait of Adrian Yung, Co-Founder &amp; Head of Performance at Syntrak" width="720" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Adrian Yung</h3>
+          <p class="team-role">Co-Founder &amp; Head of Performance</p>
+          <p class="team-note">Hong Kong&rsquo;s youngest two-time Winter Olympian</p>
+        </div>
+      </li>
+      <li class="team-member reveal d4">
+        <div class="team-photo">
+          <img src="assets/team/isaac-lee.webp" alt="Portrait of Isaac Lee, Co-Founder &amp; Head of Coaching at Syntrak" width="720" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Isaac Lee</h3>
+          <p class="team-role">Co-Founder &amp; Head of Coaching</p>
+          <p class="team-note">Hong Kong Ski Team captain</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
 <!-- ===================== CONTACT ===================== -->
-<section id="contact" class="section theme-dark" data-nav="dark" data-screen-label="Contact">
+<section id="contact" class="section theme-light" data-nav="dark" data-screen-label="Contact">
   <div class="wrap">
     <div class="contact-grid">
 
       <!-- Left: info -->
       <div class="contact-info reveal">
-        <p class="eyebrow" style="color: var(--powder-blue)">Get in touch</p>
-        <h2 class="headline" style="font-weight: 500; margin-bottom: 16px">Join the waitlist.</h2>
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="headline">Join the waitlist.</h2>
         <p class="contact-sub">Be first to know when Syntrak ships. We'll reach out with early access details.</p>
 
         <div class="contact-cards">
@@ -309,15 +332,7 @@ each carve</p>
           </a>
 
           <!-- clipboard toast -->
-          <div id="copy-toast" style="
-            position:fixed; bottom:36px; left:50%; transform:translateX(-50%) translateY(6px);
-            display:flex; align-items:center; gap:7px;
-            font-family:'Inter Tight',sans-serif; font-size:.88rem; font-weight:500;
-            color:rgba(193,215,235,.9);
-            background:none; border:none; pointer-events:none;
-            opacity:0; transition:opacity .25s ease, transform .25s ease;
-            z-index:9999;
-          ">
+          <div id="copy-toast">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
             Copied to clipboard
           </div>
@@ -374,11 +389,19 @@ each carve</p>
 <footer id="footer" data-nav="dark">
   <div class="wrap">
     <div class="frow">
-      <img src="assets/logo/syntrak-horizontal-white.png" alt="Syntrak">
-      <div class="flinks">
-        <a href="#performance" style="color: rgb(255, 255, 255); font-weight: 500">Technology</a>
-        <a href="#data-seq" style="color: rgb(255, 255, 255); font-weight: 500">COACHING</a>
-        <a href="#contact" style="font-weight: 500; color: rgb(255, 255, 255)">Contact</a>
+      <img src="assets/logo/syntrak-horizontal.png" alt="Syntrak">
+      <div class="fgroup">
+        <div class="flinks">
+        <a href="#how-it-works">HOW IT WORKS</a>
+        <a href="#compare">COMPARE</a>
+        <a href="#team">TEAM</a>
+        <a href="faq/">FAQ</a>
+        <a href="#contact">CONTACT</a>
+        </div>
+        <ul class="fsocial" aria-label="Syntrak on social media">
+          <li><a href="https://www.linkedin.com/company/syntrak/" target="_blank" rel="noopener" aria-label="Syntrak on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61596526132702" target="_blank" rel="noopener" aria-label="Syntrak on Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></li>
+        </ul>
       </div>
     </div>
     <div class="legal">© 2026 Syntrak · See every movement. Master every run.</div>
